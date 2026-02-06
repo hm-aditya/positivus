@@ -47,7 +47,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2"
+            className="lg:hidden p-2  "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -61,7 +61,8 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4">
+          <div className="lg:hidden h-screen 
+           mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
@@ -74,7 +75,7 @@ export function Navbar() {
                 </a>
               ))}
               <button
-                className="rounded-xl border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors w-full mt-2 bg-transparent"
+                className="rounded-xl border py-3 px-4 cursor-pointer bg-black text-white border-foreground  transition-colors w-full mt-2 "
               >
                 Request a quote
               </button>

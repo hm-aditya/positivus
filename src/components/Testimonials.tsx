@@ -63,7 +63,7 @@ export function Testimonials() {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-16">
      {/* HEADER */}
         <div className="flex flex-col md:flex-row gap-6 items-start mb-10 md:mb-16">
           <span className="bg-[#B9FF66] px-3 py-1 rounded-md text-lg md:text-xl font-medium">
@@ -76,7 +76,7 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="bg-[#191A23] rounded-3xl py-10 md:py-16 overflow-hidden">
+        <div className="bg-[#191A23] rounded-3xl py-10 md:py-16 xl:px-4  overflow-hidden">
 
           {/* TRACK */}
           <div
@@ -88,7 +88,7 @@ export function Testimonials() {
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3"
+                className=" w-full md:w-1/2 lg:w-1/3 shrink-0 px-1 xl:px-4  gap-2 "
               >
                 {/* ===== BUBBLE WRAPPER ===== */}
                 <div className="relative w-full  aspect-606/266">
@@ -96,8 +96,8 @@ export function Testimonials() {
                   <BubbleSVG />
 
                   {/* TEXT LAYER */}
-                  <div className="absolute inset-0 p-4 md:p-6 mb-4 flex items-center overflow-hidden">
-                    <p className="text-white text-xs md:text-md xl:text-lg leading-snug line-clamp-6">
+                  <div className="absolute inset-0 p-4 md:p-5 mb-4 flex items-center overflow-hidden">
+                    <p className="text-white text-xs md:text-md xl:text-[15px] leading-snug line-clamp-6">
                       “{t.quote}”
                     </p>
                   </div>

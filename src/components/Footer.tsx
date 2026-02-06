@@ -89,19 +89,19 @@ export function Footer() {
           <div className="container mx-auto">
             <form
               onSubmit={handleSubmit}
-              className="flex items-center justify-center bg-[#292A32] rounded-2xl p-8 "
+              className="flex lg:flex-row flex-col gap-2 items-center justify-center bg-[#292A32] rounded-2xl p-4 md:p-8 w-full xl:w-fit"
             >
               <input
                 type="email"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 bg-transparent border border-white rounded-xl h-12 w-5 px-4  text-white placeholder:text-gray-400 outline-none"
+                className="xl:flex-1 bg-transparent border border-white rounded-xl h-12  w-full xl:w-44 lg:w-1/2 sm:w-full  px-4   text-white placeholder:text-gray-400 outline-none"
                 required
               />
               <button
                 type="submit"
-                className="bg-[#B9FF66] text-[#191A23] rounded-xl mx-2  h-12 px-4 font-medium hover:bg-[#a8eb55] transition"
+                className="bg-[#B9FF66] text-[#191A23] rounded-xl mx-2 lg:w-fit w-full h-12 px-4 font-medium hover:bg-[#a8eb55] transition"
               >
                 Subscribe to news
               </button>
