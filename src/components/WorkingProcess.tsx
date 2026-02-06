@@ -24,7 +24,7 @@ export function WorkingProcess() {
       <div className="container mx-auto px-4 md:px-16">
 
         {/* HEADER */}
-        <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 mb-10 md:mb-16">
+        <div className="flex flex-col md:flex-row items-center text-center md:text-start gap-4 md:gap-10 mb-10 md:mb-16">
           <h2 className="bg-[#B9FF66] px-3 py-1 rounded-md text-2xl md:text-3xl font-medium w-fit">
             Our Working Process
           </h2>

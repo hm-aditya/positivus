@@ -6,11 +6,11 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-16">
         
         {/* MOBILE: column | DESKTOP: grid */}
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 items-center">
 
           {/* Text Content */}
-          <div className="space-y-5 text-left lg:text-left max-w-none lg:max-w-xl">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-foreground text-balance">
+          <div className="space-y-5 text-center lg:text-left max-w-2xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-medium leading-tight tracking-tight text-foreground text-balance">
               Navigating the digital landscape for success
             </h1>
 
